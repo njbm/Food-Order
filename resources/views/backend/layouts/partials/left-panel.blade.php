@@ -1,33 +1,24 @@
 
-<div class="br-logo"><a href="{{ route('admin.dashboard') }}">H <i>Management</i></a></div>
+<div class="br-logo"><a href="">Food <i>Order</i></a></div>
 <div class="br-sideleft sideleft-scrollbar">
   <label class="sidebar-label pd-x-10 mg-t-20 op-3">Navigation</label>
   <ul class="br-sideleft-menu">
     <li class="br-menu-item">
-      <a href="{{ route('admin.dashboard') }}" class="br-menu-link active">
+      <a href="{{route('admin.dashboard')}}" class="br-menu-link @active('admin.dashboard')">
         <i class="menu-item-icon fa fa-tasks tx-24"></i>
         <span class="menu-item-label">Dashboard</span>
       </a><!-- br-menu-link -->
     </li><!-- br-menu-item -->
     <li class="br-menu-item">
-      <a href="#" class="br-menu-link with-sub">
+      <a href="#" class="br-menu-link with-sub @active('admin.caetgory')">
         <i class="menu-item-icon icon ion-ios-filing-outline tx-26"></i>
         <span class="menu-item-label">Services</span>
       </a><!-- br-menu-link -->
       <ul class="br-menu-sub">
-        <li class="sub-item"><a href="#">Department</a></li>
-        <li class="sub-item"><a href="#">Doctor</a></li>
-        <li class="sub-item"><a href="#" class="sub-link" class="sub-link">Hospital</a></li>
-        <li class="sub-item"><a href="carousel.html" class="sub-link">Diagnostic</a></li>
-        <li class="sub-item"><a href="#" class="sub-link">Nurse</a></li>
-        <li class="sub-item"><a href="dropdowns.html" class="sub-link">CareGiver</a></li>
-        <li class="sub-item"><a href="dropdowns.html" class="sub-link">Nanny Service</a></li>
-        <li class="sub-item"><a href="dropdowns.html" class="sub-link">Physiotherapist</a></li>
-        <li class="sub-item"><a href="dropdowns.html" class="sub-link">Orpanech</a></li>
-        <li class="sub-item"><a href="dropdowns.html" class="sub-link">OldCare</a></li>
-        <li class="sub-item"><a href="buttons.html" class="sub-link">Packages</a></li>
-
-       </ul>
+        <li class="sub-item"><a href="{{route('admin.category')}}" class="sub-link">Category List</a></li>
+        <li class="sub-item"><a href="#" class="sub-link">Sub Category List</a></li>
+        <li class="sub-item"><a href="#" class="sub-link">Demo</a></li>
+      </ul>
     </li><!-- br-menu-item -->
 
     <li class="br-menu-item">
@@ -44,52 +35,6 @@
         </ul>
     </li><!-- br-menu-item -->
 
-    <li class="br-menu-item">
-        <a href="#" class="br-menu-link with-sub">
-          <i class="menu-item-icon icon ion-ios-briefcase-outline tx-22"></i>
-          <span class="menu-item-label">Pharmacy
-          </span>
-        </a><!-- br-menu-link -->
-        <ul class="br-menu-sub">
-          <li class="sub-item"><a href="navigation.html" class="sub-link">Category</a></li>
-          <li class="sub-item"><a href="navigation-layouts.html" class="sub-link">Sub Category</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Child Category </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Blog</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Offer</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Coupon</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Banner </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Slider </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Vendor </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Partner </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Client </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link"> Client Review </a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Advertisement</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Brand</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Stock</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Purchase</a></li>
-          <li class="sub-item"><a href="navigation-effects.html" class="sub-link">Selles Report</a></li>
-        </ul>
-    </li><!-- br-menu-item -->
-
-    <li class="br-menu-item">
-        <a href="#" class="br-menu-link with-sub">
-          <i class="menu-item-icon fa fa-taxi tx-20"></i>
-          <span class="menu-item-label">Ambulance</span>
-        </a><!-- br-menu-link -->
-        <ul class="br-menu-sub">
-          <li class="sub-item"><a href="form-elements.html" class="sub-link">Order</a></li>
-          <li class="sub-item"><a href="form-layouts.html" class="sub-link">Rider</a></li>
-          <li class="sub-item"><a href="form-layouts.html" class="sub-link">Booking</a></li>
-          <li class="sub-item"><a href="form-validation.html" class="sub-link">Pending Orders</a></li>
-          <li class="sub-item"><a href="form-wizards.html" class="sub-link">Order Processing</a></li>
-          <li class="sub-item"><a href="form-editor-code.html" class="sub-link">On the Way</a></li>
-          <li class="sub-item"><a href="form-editor-text.html" class="sub-link">Tracking</a></li>
-          <li class="sub-item"><a href="form-editor-text.html" class="sub-link">Order Rejection</a></li>
-          <li class="sub-item"><a href="form-editor-text.html" class="sub-link">Delivery Confirmation</a></li>
-          <li class="sub-item"><a href="form-editor-text.html" class="sub-link">Call</a></li>
-          <li class="sub-item"><a href="form-editor-text.html" class="sub-link">Chat</a></li>
-        </ul>
-    </li><!-- br-menu-item -->
 
     <li class="br-menu-item">
         <a href="#" class="br-menu-link with-sub">
@@ -168,12 +113,12 @@
     </li><!-- br-menu-item -->
 
     <li class="br-menu-item">
-        <a href="#" class="br-menu-link with-sub">
+        <a href="#" class="br-menu-link with-sub @active('admin.country')">
           <i class="menu-item-icon icon ion-clipboard tx-22"></i>
           <span class="menu-item-label">Address</span>
         </a><!-- br-menu-link -->
         <ul class="br-menu-sub">
-          <li class="sub-item"><a href="#" class="sub-link">Country</a></li>
+          <li class="sub-item"><a href="{{route('admin.country')}}" class="sub-link">Country</a></li>
           <li class="sub-item"><a href="#" class="sub-link">Division</a></li>
           <li class="sub-item"><a href="#" class="sub-link">Distric</a></li>
           <li class="sub-item"><a href="#" class="sub-link">Sub Distric</a></li>

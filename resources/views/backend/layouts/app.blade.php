@@ -38,30 +38,36 @@
     <title>@yield('title', 'Admin Dashboard')</title>
 
     <!--- ######    All Css Links    #######  --->
-    @include('Backend.layouts.layout_parts.css')
+    @include('backend.layouts.partials.css')
 
   </head>
 
   <body>
 
-    <!-- ########## START: LEFT PANEL ########## -->
-    @include('Backend.layouts.layout_parts.left-panel')
-    <!-- ########## END: LEFT PANEL ########## -->
+    <!------ START: LEFT PANEL ----->
+    @include('Backend.layouts.partials.left-panel')
+    <!-----==== END: LEFT PANEL ===--->
 
-    <!-- ########## START: HEAD PANEL ########## -->
-    @include('Backend.layouts.layout_parts.header')
-    <!-- ########## END: HEAD PANEL ########## -->
+    <!------- START: HEAD PANEL ------->
+    @include('Backend.layouts.partials.header')
+    <!-- ===== END: HEAD PANEL ===== -->
 
-    <!-- ########## START: RIGHT PANEL ########## -->
-    @include('Backend.layouts.layout_parts.right-panel')
-    <!-- ########## END: RIGHT PANEL ########## --->
+    <!------- START: RIGHT PANEL ------->
+    @include('Backend.layouts.partials.right-panel')
+    <!-- ===== END: RIGHT PANEL ===== --->
 
-    <!-- ########## START: MAIN PANEL ########## -->
-    @yield('main_contain')
-    <!-- ########## END: MAIN PANEL ########## -->
+    <!-- --- START: MAIN PANEL ----->
 
-    <!--- ######### All Scripts ###########--->
-    @include('Backend.layouts.layout_parts.scripts')
-    <!--- ######### All Scripts ###########--->
+    @yield('content')
+    
+    <!-- ==== END: MAIN PANEL ==== -->
+
+    <!--- ----- All Scripts ----->
+    @include('Backend.layouts.partials.scripts')
+    <!--- ===== All Scripts ===== -->
+
+
+    @stack('loadModal')
+    @stack('script')
   </body>
 </html>

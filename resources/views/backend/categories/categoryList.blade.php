@@ -1,26 +1,26 @@
 @section('title')
-Admin - all category
+Admin - All Category
 @endsection
 
-@extends('Backend.layouts.app')
+@extends('backend.layouts.app')
 
 @section('content')
 
     <!-- ########## START: MAIN PANEL ########## -->
     <div class="br-mainpanel">
-        {{-- <div class="br-pageheader">
+        <div class="br-pageheader">
           <nav class="breadcrumb pd-0 mg-0 tx-12">
             <a class="breadcrumb-item" href="{{route('admin.dashboard')}}">dashboard</a>
-            <a class="breadcrumb-item" href="{{route('admin.all_category')}}">All Category</a>
+            <a class="breadcrumb-item" href="{{route('admin.category')}}">All Category</a>
           </nav>
-        </div><!-- br-pageheader --> --}}
+        </div><!-- br-pageheader -->
 
         <div class="br-pagebody">
           <div class="br-section-wrapper">
-            <h6 class="br-section-label text-center"> Category</h6>
+            
             <div class="mb-3 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <a href="" class="btn btn-info tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" data-toggle="modal" data-target="#homeAddcategory"> <i class="fa fa-plus ml-0 mr-1"></i>Add New </a>
+                <a href="" class="btn btn-info tx-11 tx-uppercase pd-y-10 pd-x-25 tx-mont tx-medium" data-toggle="modal" data-target="#homeAddcategory"> <i class="fa fa-plus ml-0 mr-1"></i>Add New </a>
             </div>
 
             <div class="table-wrapper">
@@ -30,34 +30,24 @@ Admin - all category
                     <th class="wd-25p">Id</th>
                     <th class="wd-25p">Category Name</th>
                     <th class="wd-25p">Status</th>
+                    <th class="wd-25p">Status</th>
                     <th class="wd-25p">Action</th>
                   </tr>
                 </thead>
                 <tbody>
-                    {{-- @php
-                        $i = 1;
-                    @endphp
-                  @if (count($category) > 0)
-                    @foreach ($category as $cat) --}}
-                      <tr>
-                          <td>hi</td>
-                          <td>hello</td>
-                          <td>
-
-                            {{-- @if ($cat->status == 1)
-                                Active
-                              @else
-                                Inactive
-                            @endif --}}
-
-                          </td>
-                          <td>
-                            <a class="btn text-info" href=""><i class="icon ion-compose tx-28"></i></a>
-                            <button class="btn text-danger bg-white" value="" id="homeCatdelete"><i class="icon ion-trash-a tx-28"></i></button>
-                          </td>
-                      </tr>
-                    {{-- @endforeach
-                  @endif --}}
+               
+                  <tr>
+                     <td>1</td>
+                     <td>hello</td>
+                     <td> Active </td>
+                     <td> Active </td>
+                     <td>
+                        <a class="btn text-info" href=""><i class="icon ion-compose tx-28"></i></a>
+                        <button class="btn text-danger bg-white" value="1" id="homeCatdelete"><i class="icon ion-trash-a tx-28"></i></button>
+                     </td>
+                  </tr>
+                     
+                  
 
                 </tbody>
               </table>
@@ -68,8 +58,8 @@ Admin - all category
         </div><!-- br-pagebody -->
         <footer class="br-footer">
           <div class="footer-left">
-            <div class="mg-b-2">Copyright &copy; <?php echo date('Y');?> NavieaSoft. All Rights Reserved.</div>
-            <div>Attentively and carefully made by NavieaSoft.</div>
+            <div class="mg-b-2">Copyright &copy; <?php echo date('Y');?> Jaber Masud. All Rights Reserved.</div>
+            <div>Made by Jaber Masud.</div>
           </div>
         </footer>
     </div><!-- br-mainpanel -->
