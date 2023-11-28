@@ -1,5 +1,5 @@
 @extends('backend.layouts.app')
-@section('main_contain')
+@section('content')
 <div class="br-mainpanel">
     <div class="br-pagetitle">
       {{-- <i class="icon ion-ios-home-outline"></i>

@@ -11,6 +11,8 @@ Route::get('blog', [FrontendController::class, 'blog'])->name('blog');
 Route::get('cart', [FrontendController::class, 'cart'])->name('cart');
 Route::get('cat_by_product', [FrontendController::class, 'cat_by_product'])->name('cat_by_product');
 
+Route::get('users/{id}', [UserController::class, 'index'])->name('user.index');
+
 
 
 
